@@ -1,0 +1,30 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.main-accordion {
+    border-radius: 10px !important;
+    margin: 8px auto !important;
+    max-width: 350px;
+}
+
+.main-accordion svg {
+    color: var(--white_color-one) !important;
+}
+
+.main-accordion__sumary {
+    background-color: var(--blue_color-default) !important;
+    border-left: 10px solid var(--green_color-default);
+    border-radius: 10px;
+}
+
+.main-accordion__title {
+    color: var(--white_color-one);
+}
+
+.main-accordion__details {}
+
+.main-accordion__infos {}

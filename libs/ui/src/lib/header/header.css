@@ -1,0 +1,45 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.main-header {
+    background-color: var(--blue_color-default);
+    padding: 16px;
+
+}
+
+.main-header__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 16px;
+    margin: 0 auto;
+
+    max-width: 320px;
+}
+
+.main-header__navigation {
+    display: flex;
+    gap: 8px;
+}
+
+.main-header__links {
+    color: var(--white_color-four);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px) {
+    .main-header__content {
+        justify-content: space-around;
+        max-width: 1024px;
+    }
+
+    .main-header__links {
+        font-size: 16px;
+    }
+}

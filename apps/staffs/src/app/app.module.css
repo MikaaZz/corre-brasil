@@ -1,1 +1,59 @@
 /* Your styles goes here. */
+@import url("https://use.typekit.net/vvw5egv.css");
+
+:root {
+    --blue_color-default: #26395A;
+    --blue_color-clear: #DAE3F2;
+    --blue_color-dark: #26535A;
+
+    --green_color-default: #A0CB47;
+    --green_color-clear: #EAF2DA;
+    --green_color-dark: #B28C3E;
+
+    --yellow_color-default: #FFA435;
+    --yellow_color-clear: #F2E7DA;
+    --yellow_color-dark: #E53930;
+
+    --white_bgColor: #F6F6F6;
+
+    --black_color-one: #303030;
+    --black_color-two: #2B2B2B;
+    --black_color-three: #1F1F1F;
+    --black_color-four: #1B1C1E;
+
+    --white_color-one: #F6F6F6;
+    --white_color-two: #FEFEFE;
+    --white_color-three: #FDFEFF;
+    --white_color-four: #FEFDFB;
+}
+
+* {
+    font-family: poppins, sans-serif;
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p,
+li,
+a {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--white_bgColor);
+}

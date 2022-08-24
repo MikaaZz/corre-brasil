@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "staffs": "apps/staffs",
-    "staffs-e2e": "apps/staffs-e2e"
+    "staffs-e2e": "apps/staffs-e2e",
+    "ui": "libs/ui"
   }
 }
