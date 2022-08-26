@@ -52,3 +52,10 @@
     margin: 8px auto;
     width: 90%;
 }
+
+@media screen and (min-width:1024px) {
+    .main-accordion {
+        margin: 16px !important;
+        max-width: 1024px;
+    }
+}
