@@ -83,7 +83,7 @@ export const Functions_staffs = () => {
                   </strong>
                 </li>
                 <li>
-                  Fluxo – auxiliar para que não atletas entrem no funil de
+                  Fluxo – auxiliar para que os atletas não entrem no funil de
                   chegada;
                 </li>
                 <li>

@@ -1,0 +1,61 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.footer-content {
+    background-color: var(--blue_color-default);
+    padding: 16px 0 48px;
+}
+
+.footer-content__div {
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footer-content__title {
+    color: var(--white_color-one);
+    margin: 0 auto 32px;
+    text-align: center;
+    width: 95%;
+}
+
+.footer-content__infosContainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 16px;
+
+    margin: 0 0 0 24px;
+}
+
+.footer-content__infosContainer__linksContainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-content__infosContainer__linksContainer__socialMedia {}
+
+.footer-content__infosContainer__linksContainer__socialMedia--text {}
+
+.footer-content__infosContainer__linksContainer__socialMedia--container {}
+
+.footer-content__infosContainer__linksContainer__socialMedia--link {}
+
+.footer-content__infosContainer__linksContainer__webSites {}
+
+.footer-content__infosContainer__linksContainer__webSites--text {}
+
+.footer-content__infosContainer__linksContainer__webSites--list {}
+
+.footer-content__infosContainer__linksContainer__webSites--listLink {}
+
+.footer-content__infosContainer__linksContainer__webSites--listItem {}
