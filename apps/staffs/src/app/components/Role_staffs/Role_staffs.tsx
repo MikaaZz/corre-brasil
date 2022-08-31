@@ -13,7 +13,7 @@ import { Pagination, EffectCoverflow } from 'swiper';
 
 export const Role_staffs = () => {
   return (
-    <>
+    <div id="roleStaffs">
       <div className="role-content__roleInfos">
         <h3 className="role-content__roleInfos__titleContainer-title">
           Papel do
@@ -74,6 +74,6 @@ export const Role_staffs = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };

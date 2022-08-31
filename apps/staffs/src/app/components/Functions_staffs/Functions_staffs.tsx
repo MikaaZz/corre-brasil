@@ -4,7 +4,7 @@ import './Functions_staffs.css';
 
 export const Functions_staffs = () => {
   return (
-    <>
+    <div id="functionsStaffs">
       <h2 className="function-staffs__title">Funções:</h2>
       <div className="function-staffs__div">
         <Accordion_personal
@@ -96,6 +96,6 @@ export const Functions_staffs = () => {
           }
         />
       </div>
-    </>
+    </div>
   );
 };

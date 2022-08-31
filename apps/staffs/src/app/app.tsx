@@ -7,7 +7,23 @@ import { Role_staffs } from './components/Role_staffs/Role_staffs';
 export const App = () => {
   return (
     <>
-      <Header />
+      {/* HEADER NAV */}
+      <Header
+        headerContentNav={
+          <>
+            <a className="main-header__links" href="#roleStaffs">
+              Papel
+            </a>
+            <a className="main-header__links" href="#functionsStaffs">
+              Funções
+            </a>
+            <a className="main-header__links" href="#orientationStaffs">
+              Orientações
+            </a>
+          </>
+        }
+      ></Header>
+      {/* MAIN CONTENT */}
       <main className="main-content">
         <div className="main-content__initialInfos">
           <div className="main-content__initialInfos--titleContainer">
@@ -43,9 +59,12 @@ export const App = () => {
             mundo inteiro, inclusive no Brasil.
           </p>
         </div>
+        {/* ROLE STAFFS */}
         <Role_staffs />
+        {/* FUNCTION STAFFS */}
         <Functions_staffs />
-        <div className="main-content__orientationInfos">
+        {/* ORIENTATION STAFFS */}
+        <div id="orientationStaffs" className="main-content__orientationInfos">
           <h2 className="main-content__orientationInfos__title">
             Orientações:
           </h2>
@@ -93,6 +112,7 @@ export const App = () => {
           </ul>
         </div>
       </main>
+      {/* FOOTER */}
       <Footer />
     </>
   );

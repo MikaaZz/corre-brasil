@@ -31,6 +31,12 @@
     color: var(--white_color-four);
     font-size: 12px;
     text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+
+.main-header__links:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 @media screen and (min-width:1024px) {

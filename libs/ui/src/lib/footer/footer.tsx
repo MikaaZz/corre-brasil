@@ -24,27 +24,27 @@ export function Footer(props: FooterProps) {
                   target="_blank"
                   href="http://instagram.com/correbrasil"
                 >
-                  <Instagram />
+                  <Instagram fontSize="large" />
                 </a>
                 <a
                   className="footer-content__infosContainer__linksContainer__socialMedia--link"
                   target="_blank"
                   href="https://www.facebook.com/correbrasil"
                 >
-                  <Facebook />
+                  <Facebook fontSize="large" />
                 </a>
                 <a
                   className="footer-content__infosContainer__linksContainer__socialMedia--link"
                   target="_blank"
                   href="https://www.youtube.com/user/vemcorrercomagente"
                 >
-                  <YouTube />
+                  <YouTube fontSize="large" />
                 </a>
               </div>
             </div>
             <div className="footer-content__infosContainer__linksContainer__webSites">
               <p className="footer-content__infosContainer__linksContainer__webSites--text">
-                Plataformas
+                Plataformas:
               </p>
               <ul className="footer-content__infosContainer__linksContainer__webSites--list">
                 <a
