@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@corre-brasil/api-calls": ["libs/api-calls/src/index.ts"],
       "@corre-brasil/ui": ["libs/ui/src/index.ts"]
     }
   },
