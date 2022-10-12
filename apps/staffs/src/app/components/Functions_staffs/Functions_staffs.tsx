@@ -8,6 +8,15 @@ export const Functions_staffs = () => {
       <h2 className="function-staffs__title">Funções:</h2>
       <div className="function-staffs__div">
         <Accordion_personal
+          accordionInfos={[
+            { id: 1, title: 'Pista - Hidratação:' },
+            { id: 2, title: 'Pista - Sinalização:' },
+            { id: 3, title: 'Arena:' },
+          ]}
+          accordionItemsContent={[{}]}
+          accordionListContent={[{}]}
+        />
+        {/* <Accordion_personal
           accordionTitle={'Pista - Hidratação:'}
           accordionContent={
             <ul>
@@ -35,8 +44,8 @@ export const Functions_staffs = () => {
               </li>
             </ul>
           }
-        />
-        <Accordion_personal
+        /> */}
+        {/* <Accordion_personal
           accordionTitle={'Pista - Sinalização:'}
           accordionContent={
             <ul>
@@ -58,8 +67,8 @@ export const Functions_staffs = () => {
               <li>Você sempre pode incentivar e animar os atletas!</li>
             </ul>
           }
-        />
-        <Accordion_personal
+        /> */}
+        {/* <Accordion_personal
           accordionTitle={'Arena:'}
           accordionContent={
             <>
@@ -94,7 +103,7 @@ export const Functions_staffs = () => {
               </ul>
             </>
           }
-        />
+        /> */}
       </div>
     </div>
   );

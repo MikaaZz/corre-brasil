@@ -1,9 +1,11 @@
-import styles from './register.module.css';
-
 import { useState } from 'react';
 
 import BrasilStates from '../brasil-states/brasil-states';
 import BrasilCitys from '../brasil-cities/brasil-cities';
+
+import { Box } from '@mui/system';
+import { Button, TextField } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 
 /* eslint-disable-next-line */
 export interface RegisterProps {}
@@ -24,40 +26,83 @@ export function Register(props: RegisterProps) {
 
   const inputs = { phone: document.querySelector('#telefoneInput') };
 
-  console.log(inputs);
-
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <label>Nome completo:</label>
-        <input type={'text'} id="nameInput" name="nameRegister" required />
-        <label>Estado:</label>
-        <BrasilStates
-          id="stateInput"
-          name="stateRegister"
-          onChange={handleInputChange}
-        />
-        <label>Cidade:</label>
-        <BrasilCitys
-          id="cityInput"
-          // state={formValues}
-          name="cityRegister"
-          onChange={handleInputChange}
-        />
-        <label>Telefone para contato:</label>
-        <input
-          type={'tel'}
-          id="telefoneInput"
-          name="telefoneRegister"
-          maxLength={11}
-          placeholder="(xx) xxxxx-xxxx"
-          onChange={() => {}}
+    <Box
+      sx={{
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        gap: '32px',
+        border: '1px solid #15254d',
+        borderRadius: '8px',
+        margin: '16px auto',
+        padding: '32px 0px',
+        maxWidth: '450px',
+        width: '100%',
+      }}
+    >
+      <form
+        style={{
+          alignItems: 'flex-start',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+          gap: '12px',
+        }}
+        onSubmit={handleSubmit}
+      >
+        <TextField
+          id="name-input"
+          label="Nome completo"
+          helperText="Insira seu nome completo"
+          name="name-register"
+          type={'text'}
           required
+          sx={{ width: '100%' }}
         />
-        <label>E-mail para contato:</label>
-        <input type={'email'} id="emailInput" name="emailRegister" required />
+
+        <Box sx={{ alignItems: 'center', display: 'flex', gap: '8px' }}>
+          <BrasilStates
+            id="stateInput"
+            name="stateRegister"
+            onChange={handleInputChange}
+          />
+          <BrasilCitys
+            id="cityInput"
+            // state={formValues}
+            name="cityRegister"
+            onChange={handleInputChange}
+          />
+        </Box>
+
+        <TextField
+          id="outlined-phone-input"
+          label="Phone number"
+          autoComplete="phone-number"
+          helperText="Insira seu número de telefone"
+          required
+          sx={{ width: '100%' }}
+        />
+        <TextField
+          autoComplete="e-mail"
+          id="outlined-email-input"
+          label="E-mail"
+          helperText="Insira seu endereço de e-mail"
+          type="email"
+          required
+          sx={{ width: '100%' }}
+        />
+        <Button
+          variant="contained"
+          endIcon={<SendIcon />}
+          sx={{ width: '100%' }}
+          type={'submit'}
+        >
+          Enivar
+        </Button>
       </form>
-    </>
+    </Box>
   );
 }
 

@@ -29,7 +29,8 @@ export function BrasilStates(props: BrasilStatesProps) {
         name={props.name}
         data={states}
         onChange={props.onChange}
-        startValue="Selecione seu estado..."
+        startValue="Estado"
+        helperInfos="Selecione o seu estado"
       />
     </>
   );

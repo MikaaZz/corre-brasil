@@ -30,7 +30,8 @@ export function BrasilCities(props: BrasilCitysProps) {
       name={props.name}
       data={cities}
       onChange={props.onChange}
-      startValue="Selecione sua cidade..."
+      startValue="Cidade"
+      helperInfos="Selecione a sua cidade"
     />
   );
 }

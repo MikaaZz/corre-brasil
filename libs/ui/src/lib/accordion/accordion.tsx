@@ -11,32 +11,38 @@ import './accordion.css';
 /* eslint-disable-next-line */
 
 interface childrens {
-  accordionTitle: string;
-  accordionContent: JSX.Element;
+  accordionInfos: object[];
+  accordionListContent: object[];
+  accordionItemsContent: object[];
 }
 
 export function Accordion_personal(props: childrens) {
-  return (
-    <>
-      <Accordion className="main-accordion">
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-          className="main-accordion__sumary"
-        >
-          <Typography className="main-accordion__title">
-            {props.accordionTitle}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails className="main-accordion__details">
-          <Typography className="main-accordion__infos">
-            {props.accordionContent}
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </>
-  );
+  const AccordionContent = props.accordionInfos.map((element: any) => (
+    <Accordion className="main-accordion" key={element.id}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel2a-content"
+        id="panel2a-header"
+        className="main-accordion__sumary"
+      >
+        <Typography className="main-accordion__title">
+          {element.title}
+        </Typography>
+      </AccordionSummary>
+      <AccordionDetails className="main-accordion__details">
+        <Typography className="main-accordion__infos">
+          {props.accordionItemsContent.map((element: any) => (
+            <ul>
+              {props.accordionListContent.map((element: any) => (
+                <li>{element.listContent}</li>
+              ))}
+            </ul>
+          ))}
+        </Typography>
+      </AccordionDetails>
+    </Accordion>
+  ));
+  return <>{AccordionContent}</>;
 }
 
 export default Accordion_personal;
